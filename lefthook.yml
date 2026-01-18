@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  skip:
+    - merge
+    - rebase
+    - when: env.LEFTHOOK_SKIP = true
+  commands:
+    oxlint:
+      run: bun run lint
+    oxfmt:
+      run: bun run format:check
+
+commit-msg:
+  skip:
+    - regex: '.*\[skip ci\].*'
+  commands:
+    commitlint:
+      run: bunx commitlint --edit {1}

@@ -1,0 +1,236 @@
+{
+  "name": "electron-main-bridge",
+  "version": "0.3.0",
+  "description": "Electron main process bridge",
+  "keywords": [
+    "bridge",
+    "electron",
+    "ipc",
+    "main-process",
+    "renderer",
+    "rpc",
+    "type-safe"
+  ],
+  "homepage": "https://github.com/abramdev/electron-main-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/abramdev/electron-main-bridge/issues"
+  },
+  "license": "MIT",
+  "author": "abramdev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abramdev/electron-main-bridge.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./main": {
+      "types": "./dist/main/index.d.mts",
+      "import": "./dist/main/index.mjs"
+    },
+    "./main/fs": {
+      "types": "./dist/main/fs.d.mts",
+      "import": "./dist/main/fs.mjs"
+    },
+    "./main/path": {
+      "types": "./dist/main/path.d.mts",
+      "import": "./dist/main/path.mjs"
+    },
+    "./main/app": {
+      "types": "./dist/main/app.d.mts",
+      "import": "./dist/main/app.mjs"
+    },
+    "./main/auto-updater": {
+      "types": "./dist/main/auto-updater.d.mts",
+      "import": "./dist/main/auto-updater.mjs"
+    },
+    "./main/dialog": {
+      "types": "./dist/main/dialog.d.mts",
+      "import": "./dist/main/dialog.mjs"
+    },
+    "./main/global-shortcut": {
+      "types": "./dist/main/global-shortcut.d.mts",
+      "import": "./dist/main/global-shortcut.mjs"
+    },
+    "./main/menu": {
+      "types": "./dist/main/menu.d.mts",
+      "import": "./dist/main/menu.mjs"
+    },
+    "./main/power-monitor": {
+      "types": "./dist/main/power-monitor.d.mts",
+      "import": "./dist/main/power-monitor.mjs"
+    },
+    "./main/power-save-blocker": {
+      "types": "./dist/main/power-save-blocker.d.mts",
+      "import": "./dist/main/power-save-blocker.mjs"
+    },
+    "./main/push-notifications": {
+      "types": "./dist/main/push-notifications.d.mts",
+      "import": "./dist/main/push-notifications.mjs"
+    },
+    "./main/safe-storage": {
+      "types": "./dist/main/safe-storage.d.mts",
+      "import": "./dist/main/safe-storage.mjs"
+    },
+    "./main/session": {
+      "types": "./dist/main/session.d.mts",
+      "import": "./dist/main/session.mjs"
+    },
+    "./main/screen": {
+      "types": "./dist/main/screen.d.mts",
+      "import": "./dist/main/screen.mjs"
+    },
+    "./main/share-menu": {
+      "types": "./dist/main/share-menu.d.mts",
+      "import": "./dist/main/share-menu.mjs"
+    },
+    "./main/shell": {
+      "types": "./dist/main/shell.d.mts",
+      "import": "./dist/main/shell.mjs"
+    },
+    "./main/tray": {
+      "types": "./dist/main/tray.d.mts",
+      "import": "./dist/main/tray.mjs"
+    },
+    "./main/notification": {
+      "types": "./dist/main/notification.d.mts",
+      "import": "./dist/main/notification.mjs"
+    },
+    "./main/system-preferences": {
+      "types": "./dist/main/system-preferences.d.mts",
+      "import": "./dist/main/system-preferences.mjs"
+    },
+    "./main/browserWindow": {
+      "types": "./dist/main/browserWindow.d.mts",
+      "import": "./dist/main/browserWindow.mjs"
+    },
+    "./renderer": {
+      "types": "./dist/renderer/index.d.mts",
+      "import": "./dist/renderer/index.mjs"
+    },
+    "./renderer/fs": {
+      "types": "./dist/renderer/fs.d.mts",
+      "import": "./dist/renderer/fs.mjs"
+    },
+    "./renderer/path": {
+      "types": "./dist/renderer/path.d.mts",
+      "import": "./dist/renderer/path.mjs"
+    },
+    "./renderer/app": {
+      "types": "./dist/renderer/app.d.mts",
+      "import": "./dist/renderer/app.mjs"
+    },
+    "./renderer/auto-updater": {
+      "types": "./dist/renderer/auto-updater.d.mts",
+      "import": "./dist/renderer/auto-updater.mjs"
+    },
+    "./renderer/dialog": {
+      "types": "./dist/renderer/dialog.d.mts",
+      "import": "./dist/renderer/dialog.mjs"
+    },
+    "./renderer/global-shortcut": {
+      "types": "./dist/renderer/global-shortcut.d.mts",
+      "import": "./dist/renderer/global-shortcut.mjs"
+    },
+    "./renderer/menu": {
+      "types": "./dist/renderer/menu.d.mts",
+      "import": "./dist/renderer/menu.mjs"
+    },
+    "./renderer/power-monitor": {
+      "types": "./dist/renderer/power-monitor.d.mts",
+      "import": "./dist/renderer/power-monitor.mjs"
+    },
+    "./renderer/power-save-blocker": {
+      "types": "./dist/renderer/power-save-blocker.d.mts",
+      "import": "./dist/renderer/power-save-blocker.mjs"
+    },
+    "./renderer/push-notifications": {
+      "types": "./dist/renderer/push-notifications.d.mts",
+      "import": "./dist/renderer/push-notifications.mjs"
+    },
+    "./renderer/safe-storage": {
+      "types": "./dist/renderer/safe-storage.d.mts",
+      "import": "./dist/renderer/safe-storage.mjs"
+    },
+    "./renderer/session": {
+      "types": "./dist/renderer/session.d.mts",
+      "import": "./dist/renderer/session.mjs"
+    },
+    "./renderer/screen": {
+      "types": "./dist/renderer/screen.d.mts",
+      "import": "./dist/renderer/screen.mjs"
+    },
+    "./renderer/share-menu": {
+      "types": "./dist/renderer/share-menu.d.mts",
+      "import": "./dist/renderer/share-menu.mjs"
+    },
+    "./renderer/shell": {
+      "types": "./dist/renderer/shell.d.mts",
+      "import": "./dist/renderer/shell.mjs"
+    },
+    "./renderer/tray": {
+      "types": "./dist/renderer/tray.d.mts",
+      "import": "./dist/renderer/tray.mjs"
+    },
+    "./renderer/notification": {
+      "types": "./dist/renderer/notification.d.mts",
+      "import": "./dist/renderer/notification.mjs"
+    },
+    "./renderer/system-preferences": {
+      "types": "./dist/renderer/system-preferences.d.mts",
+      "import": "./dist/renderer/system-preferences.mjs"
+    },
+    "./renderer/browserWindow": {
+      "types": "./dist/renderer/browserWindow.d.mts",
+      "import": "./dist/renderer/browserWindow.mjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:install": "playwright install --with-deps",
+    "test:coverage": "c8 playwright test && c8 report --reporter=html --reporter=text",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "prepare": "lefthook install",
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "electron-json-rpc": "^1.1.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@playwright/test": "^1.57.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^22.19.7",
+    "c8": "^10.1.3",
+    "electron": "^34.5.8",
+    "lefthook": "^1.13.6",
+    "oxfmt": "^0.24.0",
+    "oxlint": "^1.39.0",
+    "semantic-release": "^25.0.2",
+    "tsdown": "^0.19.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "electron": ">=30.0.0"
+  }
+}

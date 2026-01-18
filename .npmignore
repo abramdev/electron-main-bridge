@@ -1,0 +1,41 @@
+# source
+src/
+
+# test
+test-e2e/
+coverage/
+.nyc_output/
+
+# config
+tsconfig.json
+tsdown.config.ts
+playwright.config.ts
+.releaserc.js
+lefthook.yml
+
+# dev tools
+.github/
+.lefthook/
+AGENTS.md
+CLAUDE.md
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# system
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
+# git
+.gitignore
+.git/
+
+# ci
+.github/workflows/

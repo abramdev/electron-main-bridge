@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+*.tsbuildinfo
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# system
+.DS_Store
+Thumbs.db
+
+# ai tools
+.claude/
+.cursor/
+.cursoruser/
+.aider*
+.github/copilot-instructions.md
+AGENTS.md
+CLAUDE.md
+
+# test
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# logs
+*.log

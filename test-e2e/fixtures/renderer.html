@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>E2E Test Page</title>
+  </head>
+  <body>
+    <div>Test Page</div>
+    <!-- Load renderer APIs for testing -->
+    <script type="module">
+      // Import renderer modules and expose to window
+      // This allows testing both the low-level RPC API (window.rpc)
+      // and the high-level renderer API (window.renderer*)
+
+      import * as fs from "../../dist/renderer/fs.mjs";
+      import * as path from "../../dist/renderer/path.mjs";
+      import * as app from "../../dist/renderer/app.mjs";
+      import * as dialog from "../../dist/renderer/dialog.mjs";
+      import * as shell from "../../dist/renderer/shell.mjs";
+      import * as notification from "../../dist/renderer/notification.mjs";
+      import * as screen from "../../dist/renderer/screen.mjs";
+      import * as menu from "../../dist/renderer/menu.mjs";
+      import * as tray from "../../dist/renderer/tray.mjs";
+      import * as session from "../../dist/renderer/session.mjs";
+      import * as browserWindow from "../../dist/renderer/browserWindow.mjs";
+      import * as safeStorage from "../../dist/renderer/safe-storage.mjs";
+      import * as autoUpdater from "../../dist/renderer/auto-updater.mjs";
+      import * as globalShortcut from "../../dist/renderer/global-shortcut.mjs";
+      import * as powerMonitor from "../../dist/renderer/power-monitor.mjs";
+      import * as powerSaveBlocker from "../../dist/renderer/power-save-blocker.mjs";
+      import * as pushNotifications from "../../dist/renderer/push-notifications.mjs";
+      import * as shareMenu from "../../dist/renderer/share-menu.mjs";
+      import * as systemPreferences from "../../dist/renderer/system-preferences.mjs";
+
+      // Expose to window for testing
+      window.rendererFs = fs;
+      window.rendererPath = path;
+      window.rendererApp = app;
+      window.rendererDialog = dialog;
+      window.rendererShell = shell;
+      window.rendererNotification = notification;
+      window.rendererScreen = screen;
+      window.rendererMenu = menu;
+      window.rendererTray = tray;
+      window.rendererSession = session;
+      window.rendererBrowserWindow = browserWindow;
+      window.rendererSafeStorage = safeStorage;
+      window.rendererAutoUpdater = autoUpdater;
+      window.rendererGlobalShortcut = globalShortcut;
+      window.rendererPowerMonitor = powerMonitor;
+      window.rendererPowerSaveBlocker = powerSaveBlocker;
+      window.rendererPushNotifications = pushNotifications;
+      window.rendererShareMenu = shareMenu;
+      window.rendererSystemPreferences = systemPreferences;
+
+      // Signal that renderer modules are loaded
+      window.rendererModulesReady = true;
+    </script>
+  </body>
+</html>
