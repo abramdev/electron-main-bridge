@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/abramdev/electron-main-bridge/compare/v1.0.0...v1.0.1) (2026-01-18)
+
+
+### Bug Fixes
+
+* configure OIDC publishing with production environment ([c73d49a](https://github.com/abramdev/electron-main-bridge/commit/c73d49afc4f138417f10df9cc20c3061b9104db7))
+
 # 1.0.0 (2026-01-18)
 
 
