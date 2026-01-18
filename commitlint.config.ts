@@ -6,6 +6,6 @@ export default {
       "always",
       ["feat", "fix", "docs", "style", "refactor", "perf", "test", "chore", "revert"],
     ],
-    "scope-enum": [2, "always", ["fs", "rpc", "deps"]],
+    "scope-enum": [2, "always", ["fs", "rpc", "deps", "release"]],
   },
 };
